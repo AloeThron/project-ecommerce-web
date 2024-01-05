@@ -62,10 +62,10 @@ export default async function ProductPge({ params }: props) {
             <div className="mb-4">
               <div className="flex items-end gap-2">
                 <span className="text-xl font-bold text-gray-800 md:text-2xl">
-                  ${data.price}
+                  {data.price} Bath
                 </span>
                 <span className="mb-0.5 text-red-500 line-through">
-                  ${data.price + 30}
+                  {data.price + 30} Bath
                 </span>
               </div>
 
@@ -81,7 +81,7 @@ export default async function ProductPge({ params }: props) {
 
             <div className="flex gap-2.5">
               <AddToBag
-                currency="USD"
+                currency="THB"
                 description={data.description}
                 image={data.images[0]}
                 name={data.name}
@@ -90,7 +90,7 @@ export default async function ProductPge({ params }: props) {
                 price_id={data.price_id}
               />
               <CheckoutNow
-                currency="USD"
+                currency="THB"
                 description={data.description}
                 image={data.images[0]}
                 name={data.name}
