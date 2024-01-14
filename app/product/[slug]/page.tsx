@@ -1,10 +1,11 @@
+import { Star, Truck } from "lucide-react";
+
 import AddToBag from "@/components/AddToBag";
 import CheckoutNow from "@/components/CheckoutNow";
 import ImageGallery from "@/components/ImageGallery";
-import { fullProduct } from "@/type/interface";
-import { client } from "@/lib/sanity";
 import { Button } from "@/components/ui/button";
-import { Star, Truck } from "lucide-react";
+import { client } from "@/lib/sanity";
+import { fullProduct } from "@/types/interface";
 
 type props = {
   params: { slug: string };

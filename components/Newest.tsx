@@ -1,8 +1,10 @@
 import Link from "next/link";
-import { simplifiedProduct } from "../type/interface";
-import { client } from "../lib/sanity";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+
+import { ArrowRight } from "lucide-react";
+
+import { client } from "../lib/sanity";
+import { simplifiedProduct } from "../types/interface";
 
 async function getData() {
   const query = `*[_type == "product"][0...4] | order(_createdAt desc) {

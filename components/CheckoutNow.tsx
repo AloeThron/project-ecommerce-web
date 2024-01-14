@@ -1,7 +1,8 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { useShoppingCart } from "use-shopping-cart";
+
+import { Button } from "@/components/ui/button";
 import { urlFor } from "../lib/sanity";
 import { ProductCart } from "./AddToBag";
 

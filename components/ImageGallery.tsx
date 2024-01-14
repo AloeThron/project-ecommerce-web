@@ -1,8 +1,9 @@
 "use client";
 
-import Image from "next/image";
-import { urlFor } from "../lib/sanity";
 import { useState } from "react";
+import Image from "next/image";
+
+import { urlFor } from "../lib/sanity";
 
 interface iAppProps {
   images: string[];

@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { simplifiedProduct } from "../../type/interface";
-import { client } from "../../lib/sanity";
 import Image from "next/image";
+
+import { simplifiedProduct } from "../../types/interface";
+import { client } from "../../lib/sanity";
 
 type props = {
   params: { category: string };

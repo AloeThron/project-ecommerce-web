@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { client, urlFor } from "../lib/sanity";
 import Link from "next/link";
+
+import { client, urlFor } from "../lib/sanity";
 
 async function getData() {
   const query = "*[_type == 'heroImage'][0]";
@@ -36,7 +37,6 @@ export default async function Hero() {
               height={500}
             />
           </div>
-
           <div className="overflow-hidden rounded-lg bg-gray-100 shadow-lg">
             <Image
               src={urlFor(data.image2).url()}
