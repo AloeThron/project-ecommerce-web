@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import CartProvider from "./components/CartProvider";
-import ShoppingCartModal from "./components/ShoppingCartModal";
+import Navbar from "../components/Navbar";
+import CartProvider from "../components/CartProvider";
+import ShoppingCartModal from "../components/ShoppingCartModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
